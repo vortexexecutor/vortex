@@ -1,0 +1,13 @@
+local notification = {}
+
+local function notification:create()
+notification["GUI"] = Instance.new("ScreenGui")
+notification.GUI.Parent = game.CoreGui
+notification["Frame"] = Instance.new("Frame")
+notification.Frame.Parent = notification.GUI
+notification.Frame.Size = UDim2.new(0.8, 0, 0.6, 0)
+notification.Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+notification.Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+end
+
+return notification
