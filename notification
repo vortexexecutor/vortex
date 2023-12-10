@@ -1,6 +1,6 @@
 local notification = {}
 
-local function notification:create()
+function notification:create()
 notification["GUI"] = Instance.new("ScreenGui")
 notification.GUI.Parent = game.CoreGui
 notification["Frame"] = Instance.new("Frame")
