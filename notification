@@ -1,7 +1,7 @@
 local notification = {}
 
 function notification:create(title, content, duration)
-	local Main = Instance.new("Frame", game.CoreGui)
+	local Main = Instance.new("Frame", Instance.new("ScreenGui", game.CoreGui))
 	local Corner = Instance.new("UICorner")
 	local TopBar = Instance.new("Frame")
 	local Hide = Instance.new("Frame")
