@@ -14,7 +14,6 @@ function notification:create(title, content, duration)
 	local Content = Instance.new("TextLabel")
 
 	Main.Name = "Notification"
-	Main.Parent = game.Players.LocalPlayer.PlayerGui["Vortex V1.1"]
 	Main.AnchorPoint = Vector2.new(1, 1)
 	Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 	Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
