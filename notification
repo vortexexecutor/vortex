@@ -1,7 +1,7 @@
 local notification = {}
 
 function notification:create(title, content, duration)
-	local Main = Instance.new("Frame", Instance.new("ScreenGui", game.CoreGui))
+	local Main = Instance.new("Frame", Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui))
 	local Corner = Instance.new("UICorner")
 	local TopBar = Instance.new("Frame")
 	local Hide = Instance.new("Frame")
@@ -14,6 +14,7 @@ function notification:create(title, content, duration)
 	local Content = Instance.new("TextLabel")
 
 	Main.Name = "Notification"
+	Main.Parent = game.Players.LocalPlayer.PlayerGui["Vortex V1.1"]
 	Main.AnchorPoint = Vector2.new(1, 1)
 	Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 	Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -130,9 +131,5 @@ function notification:create(title, content, duration)
 	
 	close_tween:Play()
 end
-
-wait(6)
-
-notification:create("Welcome to Vortex", "Powered by our own API", 5)
 
 return notification
